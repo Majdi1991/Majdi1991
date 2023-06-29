@@ -12,6 +12,7 @@
     <meta property="og:descripition" content="one page website using simple css class for mobiel optimization.."/>
     <link rel="stylesheet" href="asset\css\w3css.css">
     <link rel="stylesheet" href="asset\css\font-awesome.min.css">
+    
     <style>
         html{
             scroll-behavior: smooth;
@@ -22,12 +23,26 @@
         section{
             scroll-margin-top: 50px;
         }
+        #home{
+          height: 350px;
+          background-image:url("head-2748333_1280.jpg");
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position:center;
+          background-attachment: fixed;
+        }
+        
     </style>
 
 </head>
 <body>
     <!-- HEADER START -->
     <header class="w3-top w3-white">
+      <div style="display: flex; justify-content: center;align-items: center; height: 100px;">
+      <h1 style="color: red; font-size: 70px;"> <q> Développeurs </q></h1>
+      </div>
+           <a href="https://diegomazenc.github.io/madimi/index.html" style="display: flex; justify-content: right; align-items:center;"><strong style="font-size: 50px;"><mark> Cliquez ici </mark></strong></a>
+        
       <nav id="desktopNav" class="w3-bar w3-white">
         <a
           href="javascript:void(0)"
@@ -36,41 +51,23 @@
         >
           <i class="fa fa-bars" aria-hidden="true"></i>
         </a>
-        <a href="#image" onclick="homeHideNavbar()" class="w3-bar-item w3-button"
-        >Image</a>
-        
-        <a href="#home"class="w3-bar-item w3-button w3-hide-small">Home</a>
-        <a href="#about" class="w3-bar-item w3-button w3-hide-small">About</a>
-        <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"
-          >Portfolio</a
-        >
-        <a href="#contact" class="w3-bar-item w3-button w3-hide-small"
-          >Contact</a
+        <a href="#image"onclick="homeHideNavbar()"class="w3-bar-item w3-button" style="font-size: 60px; color: green;">Image</a>
+        <a href="#home"      class="w3-bar-item w3-button w3-hide-small"        style="font-size: 50px; color:blue;">Home</a>
+        <a href="#about"     class="w3-bar-item w3-button w3-hide-small"        style="font-size: 40px; color:darkorange;">About</a>
+        <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"        style="font-size: 30px; color: chartreuse;">Portfolio</a>
+        <a href="#contact"   class="w3-bar-item w3-button w3-hide-small"        style="font-size: 20px; color: fuchsia;">Conctact</a
         >
       </nav>
       <nav
         id="mobileNav"
         class="w3-bar-block w3-white w3-hide-large w3-hide-medium w3-hide"
         >
-        <a href="#home" onclick="toogleNavbar()" class="w3-bar-item w3-button"
-        >Home</a
-        >
-         <a href="#about" onclick="toogleNavbar()" class="w3-bar-item w3-button"
-         >About</a
-         >
+        <a href="#home" onclick="toogleNavbar()" class="w3-bar-item w3-button"> Home</a>
 
-        <a
-          href="#portfolio"
-          onclick="toogleNavbar()"
-          class="w3-bar-item w3-button"
-          >Portfolio</a
-        >
-        <a
-          href="#contact"
-          onclick="toogleNavbar()"
-          class="w3-bar-item w3-button"
-          >Conctact</a
-        >
+         <a href="#about" onclick="toogleNavbar()" class="w3-bar-item w3-button"> About</a>
+
+         <a href="#portfolio" onclick="toogleNavbar()"class="w3-bar-item w3-button"> portfolio </a>
+         <a href="#contact" onclick="toogleNavbar()"class="w3-bar-item w3-button"> Conctact</a>
       </nav>
     </header>
       <!-- HEADER END -->
@@ -78,19 +75,51 @@
     <main class="w3-container">
       
 
-        <section id="image">
-          <h2></h2>
+        <section style="display: flex; justify-content: center; align-items: center;" id="image">
+          
           <img class="fit-picture"
-          src="code-1076536_1280.jpg"
-          width="350px"
-          height="300px"
-          alt="">
+          src=" artificial-intelligence-4389372_1280.jpg "
+          width="1400px"
+          height="1000px"
+         >
+          <!--
+            <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        main.section{
+            margin-top: 150px;
+        }
+        section{
+            scroll-margin-top: 50px;
+        }
+        #home{
+          height: 350px;
+          background-image:url("head-2748333_1280.jpg");
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position:center;
+          background-attachment: fixed;
+        }
+        
+          -->
 
         </section>
         <section id="home">
-            <h2>Home</h2>
-            <p>
+            <h2 style="opacity: 0.2; color:blue;">Home</h2>
+            <p style="opacity: 0.2;">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+              esse blanditiis, officia reiciendis natus id officiis temporibus quam
+              architecto aperiam ratione nulla, amet magnam beatae fugit mollitia
+              voluptatum recusandae. Eum ab fugiat quo. Libero velit perspiciatis
+              eum blanditiis. Repellendus, unde error eos accusantium praesentium
+              libero sint molestias magnam ab odit officiis recusandae. Veniam
+              blanditiis saepe harum quidem ea. Provident incidunt accusamus omnis
+              dolorum harum, sint vel deleniti labore laudantium delectus maiores
+              explicabo quaerat debitis soluta assumenda culpa consequuntur sequi
+              eaque ab perspiciatis ad rem molestias. Odit dolorum nihil, minima
+              sint doloremque sit aliquid qui expedita commodi atque ad reiciendis
+              eos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
               esse blanditiis, officia reiciendis natus id officiis temporibus quam
               architecto aperiam ratione nulla, amet magnam beatae fugit mollitia
               voluptatum recusandae. Eum ab fugiat quo. Libero velit perspiciatis
@@ -105,7 +134,7 @@
             </p>
           </section>
         <section id="about">
-            <h2>About</h2>
+            <h2 style="color:darkorange;">About</h2>
             <div class="w3-row"> 
                 <div class="w3-half"></div>
                    <div class="w3-half"></div>
@@ -121,11 +150,22 @@
               explicabo quaerat debitis soluta assumenda culpa consequuntur sequi
               eaque ab perspiciatis ad rem molestias. Odit dolorum nihil, minima
               sint doloremque sit aliquid qui expedita commodi atque ad reiciendis
-              eos!
+              eos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+              esse blanditiis, officia reiciendis natus id officiis temporibus quam
+              architecto aperiam ratione nulla, amet magnam beatae fugit mollitia
+              voluptatum recusandae. Eum ab fugiat quo. Libero velit perspiciatis
+              eum blanditiis. Repellendus, unde error eos accusantium praesentium
+              libero sint molestias magnam ab odit officiis recusandae. Veniam
+              blanditiis saepe harum quidem ea. Provident incidunt accusamus omnis
+              dolorum harum, sint vel deleniti labore laudantium delectus maiores
+              explicabo quaerat debitis soluta assumenda culpa consequuntur sequi
+              eaque ab perspiciatis ad rem molestias. Odit dolorum nihil, minima
+              sint doloremque sit aliquid qui expedita commodi atque ad reiciendis
+              eos.
             </p>
           </section>
           <section id="portfolio">
-            <h2>Portfolio</h2>
+            <h2 style="color: chartreuse;">Portfolio</h2>
 
              <div class="w3-row">
                <article class="w3-col m4 w3-border w3-center">
@@ -138,7 +178,7 @@
                </article>
                <article class="w3-col m4 w3-border w3-center">
                 <h3>step by step</h3>
-                <img src="step-by-step-6655274_1280.webp" alt="step by step" class="w3-image">
+                <img src="asset\fonts\step-by-step-6655274_1280.webp" alt="step by step" class="w3-image">
                </article>
              </div> 
 
@@ -152,11 +192,23 @@
               similique inventore molestias expedita aspernatur error? Laborum
               veritatis eum, ipsa ipsam quidem ex ducimus maiores minima ad alias
               repellat beatae at reprehenderit sint perferendis blanditiis delectus
-              quos expedita! Deserunt, veritatis similique.
+              quos expedita! Deserunt, veritatis similique. 
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+              esse blanditiis, officia reiciendis natus id officiis temporibus quam
+              architecto aperiam ratione nulla, amet magnam beatae fugit mollitia
+              voluptatum recusandae. Eum ab fugiat quo. Libero velit perspiciatis
+              eum blanditiis. Repellendus, unde error eos accusantium praesentium
+              libero sint molestias magnam ab odit officiis recusandae. Veniam
+              blanditiis saepe harum quidem ea. Provident incidunt accusamus omnis
+              dolorum harum, sint vel deleniti labore laudantium delectus maiores
+              explicabo quaerat debitis soluta assumenda culpa consequuntur sequi
+              eaque ab perspiciatis ad rem molestias. Odit dolorum nihil, minima
+              sint doloremque sit aliquid qui expedita commodi atque ad reiciendis
+              eos?
             </p>
           </section>
           <section id="contact">
-            <h2>contact</h2>
+            <h2 style="color: fuchsia;">conctact</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis
               rem odit inventore placeat amet soluta numquam cum magnam, delectus a
@@ -168,10 +220,22 @@
               similique inventore molestias expedita aspernatur error? Laborum
               veritatis eum, ipsa ipsam quidem ex ducimus maiores minima ad alias
               repellat beatae at reprehenderit sint perferendis blanditiis delectus
-              quos expedita! Deserunt, veritatis similique.
+              quos expedita! Deserunt, veritatis similique. 
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+              esse blanditiis, officia reiciendis natus id officiis temporibus quam
+              architecto aperiam ratione nulla, amet magnam beatae fugit mollitia
+              voluptatum recusandae. Eum ab fugiat quo. Libero velit perspiciatis
+              eum blanditiis. Repellendus, unde error eos accusantium praesentium
+              libero sint molestias magnam ab odit officiis recusandae. Veniam
+              blanditiis saepe harum quidem ea. Provident incidunt accusamus omnis
+              dolorum harum, sint vel deleniti labore laudantium delectus maiores
+              explicabo quaerat debitis soluta assumenda culpa consequuntur sequi
+              eaque ab perspiciatis ad rem molestias. Odit dolorum nihil, minima
+              sint doloremque sit aliquid qui expedita commodi atque ad reiciendis
+              eos!?
             </p>
           </section>
-          <p> bla bla bla</p>
+          <p style="display: flex; justify-content: center;align-items: center; height: 100px; color:aqua; font-size:90px;"> BIENVENUE</p>
     </main>
     <!-- MAIN END -->
     <!-- FOOTER START -->
