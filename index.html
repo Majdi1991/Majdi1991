@@ -1,94 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"     content="width=device-width, initial-scale=1.0">
-    <title>Mobile first statique</title>
-    <meta name="description" content="this is an page...">
-    <meta property="og:title" content="Mobile First Statique">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="#">
-    <meta property="og:image" content="#">
-    <meta property="og:descripition" content="one page website using simple css class for mobiel optimization.."/>
-    <link rel="stylesheet" href="asset\css\w3css.css">
-    <link rel="stylesheet" href="asset\css\font-awesome.min.css">
-    
-    <style>
-        html{
-            scroll-behavior: smooth;
-        }
-        main.section{
-            margin-top: 150px;
-        }
-        section{
-            scroll-margin-top: 50px;
-        }
-        #home{
-          height: 350px;
-          background-image:url("head-2748333_1280.jpg");
-          background-size: cover;
-          background-repeat: no-repeat;
-          background-position:center;
-          background-attachment: fixed;
-        }
-        img.logo {
-          position: sticky;
-          top: 5px;
-          left: 100px;
-          width: 120px;
-          height: 70px;
-        }
-    </style>
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobile first statique</title>
+  <meta name="description" content="this is an page...">
+  <meta property="og:title" content="Mobile First Statique">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="#">
+  <meta property="og:image" content="#">
+  <meta property="og:descripition" content="one page website using simple css class for mobiel optimization.." />
+  <link rel="stylesheet" href="asset\css\w3css.css">
+  <link rel="stylesheet" href="asset\css\font-awesome.min.css">
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    main.section {
+      margin-top: 150px;
+    }
+
+    section {
+      scroll-margin-top: 50px;
+    }
+
+    #home {
+      height: 350px;
+      margin-top: 300px;
+      background-image: url("head-2748333_1280.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    img.logo {
+      position: sticky;
+      top:20px;
+      left: 5px;
+      width: 70px;
+      height: 70px;
+    }
+
+    .navbar{
+      display: flex;
+    }
+
+  
+
+  </style>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fasthand&family=Mrs+Sheppards&family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fasthand&family=Mrs+Sheppards&family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <!-- HEADER START -->
-    <header  class="w3-top w3-white"> <img src="web-g1cef33a53_1920.jpg" alt="Logo web" class="logo"/>
-      <div style="display: flex; justify-content: center;align-items: center; height: 100px;">
-      <h1 style="color: red; font-size: 70px;"><q> Développeurs </q></h1>
-      </div>
-      <div class="w3-center">
-           <a href="https://diegomazenc.github.io/madimi/index.html" ><strong style="font-size:40px;"><mark>  Cliquez ici </mark></strong></a>
-          </div>
-        
+  <!-- HEADER START -->
+  <header class="w3-top w3-white">
+    <div class="navbar">
+      <a href="#image" onclick="homeHideNavbar()" class="w3-bar-item w3-button"
+          style="font-size: 60px; color: green;"><img src="web-g1cef33a53_1920.jpg" alt="Logo web" class="logo" /></a>
       <nav id="desktopNav" class="w3-bar w3-white">
-        <a
-          href="javascript:void(0)"
-          onclick="toogleNavbar()"
-          class="w3-bar-item w3-right w3-hide-large w3-hide-medium"
-        >
+        <a href="javascript:void(0)" onclick="toogleNavbar()" class="w3-bar-item w3-right w3-hide-large w3-hide-medium">
           <i class="fa fa-bars" aria-hidden="true"></i>
         </a>
-        <a href="#image"onclick="homeHideNavbar()"class="w3-bar-item w3-button" style="font-size: 60px; color: green;">Image</a>
-        <a href="#home"      class="w3-bar-item w3-button w3-hide-small"        style="font-size: 50px; color:blue;">Home</a>
-        <a href="#about"     class="w3-bar-item w3-button w3-hide-small"        style="font-size: 40px; color:darkorange;">About</a>
-        <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"        style="font-size: 30px; color: chartreuse;">Portfolio</a>
-        <a href="#contact"   class="w3-bar-item w3-button w3-hide-small"        style="font-size: 20px; color: fuchsia;">Conctact</a
-        >
+        </a>
+        <a href="#home" class="w3-bar-item w3-button w3-hide-small" style="font-size: 20px; color:blue;">Home</a>
+        <a href="#about" class="w3-bar-item w3-button w3-hide-small" style="font-size: 20px; color: maroon;">About</a>
+        <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"
+          style="font-size: 20px; color: greenyellow;">Portfolio</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-hide-small"
+          style="font-size: 20px; color: fuchsia;">Conctact</a>
       </nav>
-      <nav
-        id="mobileNav"
-        class="w3-bar-block w3-white w3-hide-large w3-hide-medium w3-hide"
-        >
-        <a href="#home" onclick="toogleNavbar()" class="w3-bar-item w3-button"> Home </a>
-        <a href="#about" onclick="toogleNavbar()" class="w3-bar-item w3-button"> About </a>
-        <a href="#portfolio" onclick="toogleNavbar()"class="w3-bar-item w3-button"> portfolio </a>
-        <a href="#contact" onclick="toogleNavbar()"class="w3-bar-item w3-button"> Conctact </a>
-      </nav> 
-    </header>
-      <!-- HEADER END -->
-      <!-- MAIN START -->
-    <main class="w3-container">
-      
+    </div>
+    <div style="display: flex; justify-content: center;align-items: center; height: 100px;">
+      <h1 style="color: red; font-size: 50px; font-family: 'Fasthand';" > Développeurs </h1>
+    </div>
+    <div class="w3-center">
+      <a href="https://diegomazenc.github.io/madimi/index.html"><strong style="font-size:30px;font-family:'Fasthand', cursive;"> Cliquez ici
+          </strong></a>
+    </div>
 
-        <section style="display: flex; justify-content: center; align-items: center;" id="image">
-          
-          <img class="fit-picture"
-          src=" artificial-intelligence-4389372_1280.jpg "
-          width="500px"
-          height="800px"
-         >
-          <!--
+
+    <nav id="mobileNav" class="w3-bar-block w3-white w3-hide-large w3-hide-medium w3-hide">
+      <a href="#home" onclick="toogleNavbar()" class="w3-bar-item w3-button"> Home </a>
+      <a href="#about" onclick="toogleNavbar()" class="w3-bar-item w3-button"> About </a>
+      <a href="#portfolio" onclick="toogleNavbar()" class="w3-bar-item w3-button"> portfolio </a>
+      <a href="#contact" onclick="toogleNavbar()" class="w3-bar-item w3-button"> Conctact </a>
+    </nav>
+  </header>
+  <!-- HEADER END -->
+  <!-- MAIN START -->
+  <main class="w3-container">
+
+
+    <section style="display: flex; justify-content: center; align-items: center;" id="image">
+
+      <!-- <img class="fit-picture" src=" artificial-intelligence-4389372_1280.jpg " width="500px" height="auto"> -->
+      <!--
             <style>
         html{
             scroll-behavior: smooth;
@@ -110,156 +126,166 @@
         
           -->
 
-        </section>
-        <section id="home">
-            <h2 style="opacity: 0.2; color:blue;">Home</h2>
-            <p style="opacity: 0.2;">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
-              esse blanditiis, officia reiciendis natus id officiis temporibus quam
-              architecto aperiam ratione nulla, amet magnam beatae fugit mollitia
-              voluptatum recusandae. Eum ab fugiat quo. Libero velit perspiciatis
-              eum blanditiis. Repellendus, unde error eos accusantium praesentium
-              libero sint molestias magnam ab odit officiis recusandae. Veniam
-              blanditiis saepe harum quidem ea. Provident incidunt accusamus omnis
-              dolorum harum, sint vel deleniti labore laudantium delectus maiores
-              explicabo quaerat debitis soluta assumenda culpa consequuntur sequi
-              eaque ab perspiciatis ad rem molestias. Odit dolorum nihil, minima
-              sint doloremque sit aliquid qui expedita commodi atque ad reiciendis
-              eos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
-              esse blanditiis, officia reiciendis natus id officiis temporibus quam
-              architecto aperiam ratione nulla, amet magnam beatae fugit mollitia
-              voluptatum recusandae. Eum ab fugiat quo. Libero velit perspiciatis
-              eum blanditiis. Repellendus, unde error eos accusantium praesentium
-              libero sint molestias magnam ab odit officiis recusandae. Veniam
-              blanditiis saepe harum quidem ea. Provident incidunt accusamus omnis
-              dolorum harum, sint vel deleniti labore laudantium delectus maiores
-              explicabo quaerat debitis soluta assumenda culpa consequuntur sequi
-              eaque ab perspiciatis ad rem molestias. Odit dolorum nihil, minima
-              sint doloremque sit aliquid qui expedita commodi atque ad reiciendis
-              eos!
-            </p>
-          </section>
-        <section id="about">
-            <h2 style="color:darkorange;">About</h2>
-            <div class="w3-row"> 
-                <div class="w3-half"></div>
-                   <div class="w3-half"></div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
-              esse blanditiis, officia reiciendis natus id officiis temporibus quam
-              architecto aperiam ratione nulla, amet magnam beatae fugit mollitia
-              voluptatum recusandae. Eum ab fugiat quo. Libero velit perspiciatis
-              eum blanditiis. Repellendus, unde error eos accusantium praesentium
-              libero sint molestias magnam ab odit officiis recusandae. Veniam
-              blanditiis saepe harum quidem ea. Provident incidunt accusamus omnis
-              dolorum harum, sint vel deleniti labore laudantium delectus maiores
-              explicabo quaerat debitis soluta assumenda culpa consequuntur sequi
-              eaque ab perspiciatis ad rem molestias. Odit dolorum nihil, minima
-              sint doloremque sit aliquid qui expedita commodi atque ad reiciendis
-              eos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
-              esse blanditiis, officia reiciendis natus id officiis temporibus quam
-              architecto aperiam ratione nulla, amet magnam beatae fugit mollitia
-              voluptatum recusandae. Eum ab fugiat quo. Libero velit perspiciatis
-              eum blanditiis. Repellendus, unde error eos accusantium praesentium
-              libero sint molestias magnam ab odit officiis recusandae. Veniam
-              blanditiis saepe harum quidem ea. Provident incidunt accusamus omnis
-              dolorum harum, sint vel deleniti labore laudantium delectus maiores
-              explicabo quaerat debitis soluta assumenda culpa consequuntur sequi
-              eaque ab perspiciatis ad rem molestias. Odit dolorum nihil, minima
-              sint doloremque sit aliquid qui expedita commodi atque ad reiciendis
-              eos.
-            </p>
-        </section>
-          <section id="portfolio">
-            <h2 style="color: chartreuse;">Portfolio</h2>
+    </section>
+    <section id="home">
+      <h2 style="opacity: 0.2; color:blue;">Home</h2>
+      <p style="opacity: 0.2;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+        esse blanditiis, officia reiciendis natus id officiis temporibus quam
+      </p>
+    </section>
+    <section id="about">
+      <h2 style="color:maroon;">About</h2>
+      <hr>
+      <div class="w3-row">
+        <div class="w3-half"></div>
+        <div class="w3-half"></div>
+        <article class="w3-col m4 w3-border w3-center">
+          <h3>step by step</h3>
+          <img src="asset\fonts\step-by-step-6655274_1280.webp" alt="step by step" class="w3-image">
+        </article>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+          esse blanditiis, officia reiciendis natus id officiis temporibus quam
+          architecto aperiam ratione nulla, amet magnam beatae fugit mollitia
+          voluptatum recusandae. Eum ab fugiat quo. Libero velit perspiciatis
+          eum blanditiis. Repellendus, unde error eos accusantium praesentium
+          libero sint molestias magnam ab odit officiis recusandae. Veniam
+          blanditiis saepe harum quidem ea. Provident incidunt accusamus omnis
+          dolorum harum, sint vel deleniti labore laudantium delectus maiores
+          explicabo quaerat debitis soluta assumenda culpa consequuntur sequi
+          eaque ab perspiciatis ad rem molestias. Odit dolorum nihil, minima
+          sint doloremque sit aliquid qui expedita commodi atque ad reiciendis
+          eos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+          esse blanditiis, officia reiciendis natus id officiis temporibus quam
+          architecto aperiam ratione nulla, amet magnam beatae fugit mollitia
+          voluptatum recusandae. Eum ab fugiat quo. Libero velit perspiciatis
+          eum blanditiis. Repellendus, unde error eos accusantium praesentium
+          libero sint molestias magnam ab odit officiis recusandae. Veniam
+          blanditiis saepe harum quidem ea. Provident incidunt accusamus omnis
+          dolorum harum, sint vel deleniti labore laudantium delectus maiores
+          explicabo quaerat debitis soluta assumenda culpa consequuntur sequi
+          eaque ab perspiciatis ad rem molestias. Odit dolorum nihil, minima
+          sint doloremque sit aliquid qui expedita commodi atque ad reiciendis
+          eos.
+        </p>
+    </section>
+    <section id="portfolio">
+      <h2 style="color: greenyellow;">Portfolio</h2>
+      <hr>
 
-             <div class="w3-row">
-               <article class="w3-col m4 w3-border w3-center">
-                <h3>10010101110000110101</h3>
-                <img src="binary-code-475664_1280.jpg" height="300px" width="465px" alt="10010101110000110101" class="w3-image">
-               </article>
-               <article class="w3-col m4 w3-border w3-center">
-                <h3>intelligence</h3>
-                <img src="artificial-intelligence-3382507_1280.jpg" alt="intelligence" class="w3-image">
-               </article>
-               <article class="w3-col m4 w3-border w3-center">
-                <h3>step by step</h3>
-                <img src="asset\fonts\step-by-step-6655274_1280.webp" alt="step by step" class="w3-image">
-               </article>
-             </div> 
+      <div class="w3-row">
+        <article class="w3-col m4 w3-border w3-center">
+          <h3>intelligence</h3>
+          <img src="artificial-intelligence-3382507_1280.jpg" alt="intelligence" class="w3-image">
+        </article>
 
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis
-              rem odit inventore placeat amet soluta numquam cum magnam, delectus a
-              in nihil ea qui enim? Error minus excepturi officiis. Aspernatur magni
-              eaque in nam! Autem beatae consectetur omnis in quisquam obcaecati
-              blanditiis ipsum soluta amet nihil, earum quidem tenetur nobis ullam
-              mollitia voluptatum qui itaque tempora corporis unde incidunt? Eum
-              minus dolorem debitis, provident ullam ex. Quibusdam iusto ullam
-              similique inventore molestias expedita aspernatur error? Laborum
-              veritatis eum, ipsa ipsam quidem ex ducimus maiores minima ad alias
-              repellat beatae at reprehenderit sint perferendis blanditiis delectus
-              quos expedita! Deserunt, veritatis similique. 
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
-              esse blanditiis, officia reiciendis natus id officiis temporibus quam
-              architecto aperiam ratione nulla, amet magnam beatae fugit mollitia
-              voluptatum recusandae. Eum ab fugiat quo. Libero velit perspiciatis
-              eum blanditiis. Repellendus, unde error eos accusantium praesentium
-              libero sint molestias magnam ab odit officiis recusandae. Veniam
-              blanditiis saepe harum quidem ea. Provident incidunt accusamus omnis
-              dolorum harum, sint vel deleniti labore laudantium delectus maiores
-              explicabo quaerat debitis soluta assumenda culpa consequuntur sequi
-              eaque ab perspiciatis ad rem molestias. Odit dolorum nihil, minima
-              sint doloremque sit aliquid qui expedita commodi atque ad reiciendis
-              eos?
-            </p>
-          </section>
-          <section id="contact">
-            <h2 style="color: fuchsia;">conctact</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis
-              rem odit inventore placeat amet soluta numquam cum magnam, delectus a
-              in nihil ea qui enim? Error minus excepturi officiis. Aspernatur magni
-              eaque in nam! Autem beatae consectetur omnis in quisquam obcaecati
-              blanditiis ipsum soluta amet nihil, earum quidem tenetur nobis ullam
-              mollitia voluptatum qui itaque tempora corporis unde incidunt? Eum
-              minus dolorem debitis, provident ullam ex. Quibusdam iusto ullam
-              similique inventore molestias expedita aspernatur error? Laborum
-              veritatis eum, ipsa ipsam quidem ex ducimus maiores minima ad alias
-              repellat beatae at reprehenderit sint perferendis blanditiis delectus
-              quos expedita! Deserunt, veritatis similique. 
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
-              esse blanditiis, officia reiciendis natus id officiis temporibus quam
-              architecto aperiam ratione nulla, amet magnam beatae fugit mollitia
-              voluptatum recusandae. Eum ab fugiat quo. Libero velit perspiciatis
-              eum blanditiis. Repellendus, unde error eos accusantium praesentium
-              libero sint molestias magnam ab odit officiis recusandae. Veniam
-              blanditiis saepe harum quidem ea. Provident incidunt accusamus omnis
-              dolorum harum, sint vel deleniti labore laudantium delectus maiores
-              explicabo quaerat debitis soluta assumenda culpa consequuntur sequi
-              eaque ab perspiciatis ad rem molestias. Odit dolorum nihil, minima
-              sint doloremque sit aliquid qui expedita commodi atque ad reiciendis
-              eos!?
-            </p>
-          </section>
-          <p style="display: flex; justify-content: center;align-items: center; height: 100px; color: rebeccapurple; font-size:90px;"> BIENVENUE </p>
-    </main>
-    <!-- MAIN END -->
-    <!-- FOOTER START -->
-    <footer></footer>
-    <!-- FOOTER END -->
-    <script>
-      function toogleNavbar() {
-        var nav = document.getElementById("mobileNav");
-        nav.classList.toggle("w3-show");
-        // console.log(nav.classList);
+      </div>
+
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis
+        rem odit inventore placeat amet soluta numquam cum magnam, delectus a
+        in nihil ea qui enim? Error minus excepturi officiis. Aspernatur magni
+        eaque in nam! Autem beatae consectetur omnis in quisquam obcaecati
+        blanditiis ipsum soluta amet nihil, earum quidem tenetur nobis ullam
+        mollitia voluptatum qui itaque tempora corporis unde incidunt? Eum
+        minus dolorem debitis, provident ullam ex. Quibusdam iusto ullam
+        similique inventore molestias expedita aspernatur error? Laborum
+        veritatis eum, ipsa ipsam quidem ex ducimus maiores minima ad alias
+        repellat beatae at reprehenderit sint perferendis blanditiis delectus
+        quos expedita! Deserunt, veritatis similique.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+        esse blanditiis, officia reiciendis natus id officiis temporibus quam
+        architecto aperiam ratione nulla, amet magnam beatae fugit mollitia
+        voluptatum recusandae. Eum ab fugiat quo. Libero velit perspiciatis
+        eum blanditiis. Repellendus, unde error eos accusantium praesentium
+        libero sint molestias magnam ab odit officiis recusandae. Veniam
+        blanditiis saepe harum quidem ea. Provident incidunt accusamus omnis
+        dolorum harum, sint vel deleniti labore laudantium delectus maiores
+        explicabo quaerat debitis soluta assumenda culpa consequuntur sequi
+        eaque ab perspiciatis ad rem molestias. Odit dolorum nihil, minima
+        sint doloremque sit aliquid qui expedita commodi atque ad reiciendis
+        eos?
+      </p>
+    </section>
+    <section id="contact">
+      <h2 style="color: fuchsia;">conctact</h2>
+      <hr>
+      <article class="w3-col m4 w3-border w3-center">
+        <h3>10010101110000110101</h3>
+        <img src="binary-code-475664_1280.jpg" height="300px" width="465px" alt="10010101110000110101" class="w3-image">
+      </article>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis
+        rem odit inventore placeat amet soluta numquam cum magnam, delectus a
+        in nihil ea qui enim? Error minus excepturi officiis. Aspernatur magni
+        eaque in nam! Autem beatae consectetur omnis in quisquam obcaecati
+        blanditiis ipsum soluta amet nihil, earum quidem tenetur nobis ullam
+        mollitia voluptatum qui itaque tempora corporis unde incidunt? Eum
+        minus dolorem debitis, provident ullam ex. Quibusdam iusto ullam
+        similique inventore molestias expedita aspernatur error? Laborum
+        veritatis eum, ipsa ipsam quidem ex ducimus maiores minima ad alias
+        repellat beatae at reprehenderit sint perferendis blanditiis delectus
+        quos expedita! Deserunt, veritatis similique.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+        esse blanditiis, officia reiciendis natus id officiis temporibus quam
+        architecto aperiam ratione nulla, amet magnam beatae fugit mollitia
+        voluptatum recusandae. Eum ab fugiat quo. Libero velit perspiciatis
+        eum blanditiis. Repellendus, unde error eos accusantium praesentium
+        libero sint molestias magnam ab odit officiis recusandae. Veniam
+        blanditiis saepe harum quidem ea. Provident incidunt accusamus omnis
+        dolorum harum, sint vel deleniti labore laudantium delectus maiores
+        explicabo quaerat debitis soluta assumenda culpa consequuntur sequi
+        eaque ab perspiciatis ad rem molestias. Odit dolorum nihil, minima
+        sint doloremque sit aliquid qui expedita commodi atque ad reiciendis
+        eos!?
+      </p>
+    </section>
+    <p
+      style="display: flex; justify-content: center;align-items: center; height: 100px; color: rebeccapurple; font-size:90px;">
+    </p>
+  </main>
+  <!-- MAIN END -->
+  <!-- FOOTER START -->
+  <footer>
+    <div class="footer-row">
+      <div class="footeradresse">
+        <h3>développeurs</h3>
+        <p>
+          19 rue pierre prhudon,<br>69001
+          ville de france
+        </p>
+      </div>
+      <div class="footerphone">
+        <h3>Téléphone</h3>
+        <a href="tel:0102030405" class="footer-a">01 55 66 77 88</a>
+      </div>
+
+      <div class="footerthree">
+        <div class="newsletters">
+          <h3>Email</h3>
+          <form>
+            <input type="email" placeholder="exemple@email.com">
+            <input type="button" value="Envoyer">
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- FOOTER END -->
+  <script>
+    function toogleNavbar() {
+      var nav = document.getElementById("mobileNav");
+      nav.classList.toggle("w3-show");
+      // console.log(nav.classList);
+    }
+
+    function homeHideNavbar() {
+      var nav = document.getElementById("mobileNav");
+      if (nav.classList.contains("w3-show")) {
+        nav.classList.remove("w3-show");
       }
-
-      function homeHideNavbar() {
-        var nav = document.getElementById("mobileNav");
-        if (nav.classList.contains("w3-show")) {
-          nav.classList.remove("w3-show");
-        }
-      }
-    </script>
+    }
+  </script>
 </body>
+
 </html>
